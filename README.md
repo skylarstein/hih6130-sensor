@@ -1,6 +1,6 @@
 # hih6130-sensor
 
-Welcome to hih6130-sensor, a Node.js I2C driver for the HIH6130 Humidity and Temperature Sensor. 
+Welcome to hih6130-sensor, a Node.js I2C driver for the HIH6130 Humidity and Temperature Sensor. Sparkfun has a [HIH6130 breakout board](https://www.sparkfun.com/products/11295), and [here is the datasheet](http://cdn.sparkfun.com/datasheets/Prototyping/1443945.pdf).
 
 This module uses [i2cb-bus](https://github.com/fivdi/i2c-bus) which should provide access with Node.js on Linux boards like the Raspberry Pi Zero, 1, 2, or 3, BeagleBone, BeagleBone Black, or Intel Edison.
 
