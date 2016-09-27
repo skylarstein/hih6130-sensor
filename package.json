@@ -1,0 +1,23 @@
+{
+  "name": "hih6130-sensor",
+  "version": "0.0.1",
+  "description": "A Node.js I2C driver for the HIH6130 Humidity and Temperature Sensor",
+  "main": "HIH6130.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skylarstein/hih6130-sensor.git"
+  },
+  "keywords": [],
+  "author": "Skylar Stein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skylarstein/hih6130-sensor/issues"
+  },
+  "homepage": "https://github.com/skylarstein/hih6130-sensor#readme",
+  "dependencies": {
+    "i2c-bus": "^1.1.1"
+  }
+}
