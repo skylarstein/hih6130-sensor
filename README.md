@@ -4,7 +4,7 @@ Welcome to hih6130-sensor, a Node.js I2C driver for the HIH6130 Humidity and Tem
 
 This module uses [i2cb-bus](https://github.com/fivdi/i2c-bus) which should provide access with Node.js on Linux boards like the Raspberry Pi Zero, 1, 2, or 3, BeagleBone, BeagleBone Black, or Intel Edison.
 
-Since hih6130-sensor needs to talk directly to the I2C bus and requires access to /dev/i2c, so you will typically need run Node with elevated privileges.
+Since hih6130-sensor needs to talk directly to the I2C bus and requires access to /dev/i2c, you will typically need run Node with elevated privileges.
 
 hih6130-sensor plays well with Node.js 4.x and 6.x
 
