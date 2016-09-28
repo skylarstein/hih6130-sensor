@@ -1,6 +1,6 @@
 {
   "name": "hih6130-sensor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Node.js I2C driver for the HIH6130 Humidity and Temperature Sensor",
   "main": "HIH6130.js",
   "scripts": {

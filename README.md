@@ -13,9 +13,11 @@ hih6130-sensor plays well with Node.js 4.x and 6.x
 ```
 const HIH6130 = require('hih6130-sensor');
 
-// The HIH6130 constructor options are optional. Default i2cBusNo 1, i2cAddress 0x27.
+// The HIH6130 constructor options are optional.
+// Defaults are i2cBusNo 1, i2cAddress 0x27.
 // 
-const options = { i2cBusNo : 1, i2cAddress : HIH6130.HIH6130_DEFAULT_I2C_ADDRESS() };
+const options = { i2cBusNo   : 1,
+                  i2cAddress : HIH6130.HIH6130_DEFAULT_I2C_ADDRESS() };
 
 const hih6130 = new HIH6130(options);
 
