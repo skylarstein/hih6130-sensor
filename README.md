@@ -1,25 +1,19 @@
-# hih6130-sensor
+# hih6130-sensor [![Node.js versions](https://img.shields.io/badge/Node.js-4.x%20through%207.x-brightgreen.svg)](https://nodejs.org) [![NPM version](https://img.shields.io/npm/v/hih6130-sensor.svg)](https://www.npmjs.com/package/hih6130-sensor)
 
-Welcome to hih6130-sensor, a Node.js I2C driver for the HIH6130 Humidity and Temperature Sensor. Sparkfun has a [HIH6130 breakout board](https://www.sparkfun.com/products/11295), and [here is the datasheet](http://cdn.sparkfun.com/datasheets/Prototyping/1443945.pdf).
+Welcome to hih6130-sensor, a Node.js I2C module for the the Honeywell HumidIcon HIH6130 Humidity and Temperature Sensor. Sparkfun has a [HIH6130 breakout board](https://www.sparkfun.com/products/11295), and [here is the datasheet](http://cdn.sparkfun.com/datasheets/Prototyping/1443945.pdf).
 
 This module uses [i2c-bus](https://github.com/fivdi/i2c-bus) which should provide access with Node.js on Linux boards like the Raspberry Pi Zero, 1, 2, or 3, BeagleBone, BeagleBone Black, or Intel Edison.
 
-Since hih6130-sensor needs to talk directly to the I2C bus and requires access to /dev/i2c, you will typically need run Node with elevated privileges.
-
-hih6130-sensor plays well with Node.js 4.x and 6.x
+Since hih6130-sensor needs to talk directly to the I2C bus and requires access to /dev/i2c, you will typically need run Node with elevated privileges or add your user account to the i2c group: ```$ sudo adduser $USER i2c```
 
 ## Example Code
 
 ```
 const HIH6130 = require('hih6130-sensor');
 
-// The HIH6130 constructor options are optional.
-// Defaults are i2cBusNo 1, i2cAddress 0x27.
-// 
-const options = { i2cBusNo   : 1,
-                  i2cAddress : HIH6130.HIH6130_DEFAULT_I2C_ADDRESS() };
-
-const hih6130 = new HIH6130(options);
+// HIH6130 constructor options object is optional, i2cBusNo defaults to 1
+//
+const hih6130 = new HIH6130({ i2cBusNo : 1 });
 
 const readSensorData = () => {
   hih6130.readSensorData()

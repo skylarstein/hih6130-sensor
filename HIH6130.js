@@ -1,7 +1,7 @@
 /*
   HIH6130.js
 
-  I2C driver for the HIH6130 Humidity and Temperature Sensor
+ Node.js I2C module for the Honeywell HumidIcon HIH6130 Humidity and Temperature Sensor
 */
 
 'use strict';
@@ -11,17 +11,15 @@ class HIH6130 {
   constructor(options) {
     const i2c = require('i2c-bus');
     this.i2cBus = i2c.openSync((options && options.hasOwnProperty('i2cBusNo')) ? options.i2cBusNo : 1);
-    this.i2cAddress = (options && options.hasOwnProperty('i2cAddress')) ? options.i2cAddress : HIH6130.HIH6130_DEFAULT_I2C_ADDRESS();
 
+    this.HIH6130_ADDRESS  = 0x27;
     this.HIH6130_CMD_SIZE = 0x04;
     this.HIH6130_CMD_READ = 0x04;
   }
 
   readSensorData() {
     return new Promise((resolve, reject) => {
-      this.i2cBus.readI2cBlock(this.i2cAddress, this.HIH6130_CMD_READ, this.HIH6130_CMD_SIZE, new Buffer(4), (err, bytesRead, data) => {
-        //console.log('DevicesRPi.ReadSensors() read', bytesRead , 'bytes:', data, 'Error: ', err ? err : 'None');
-
+      this.i2cBus.readI2cBlock(this.HIH6130_ADDRESS, this.HIH6130_CMD_READ, this.HIH6130_CMD_SIZE, new Buffer(4), (err, bytesRead, data) => {
         if(err) {
           return reject(err);
         }
@@ -44,10 +42,6 @@ class HIH6130 {
         });
       });
     });
-  }
-
-  static HIH6130_DEFAULT_I2C_ADDRESS() {
-    return 0x27;
   }
 
   static HIH6130_STATUS_NORMAL() {

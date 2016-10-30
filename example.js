@@ -2,13 +2,9 @@
 
 const HIH6130 = require('hih6130-sensor');
 
-// The HIH6130 constructor options are optional.
-// Defaults are i2cBusNo 1, i2cAddress 0x27.
-// 
-const options = { i2cBusNo   : 1,
-                  i2cAddress : HIH6130.HIH6130_DEFAULT_I2C_ADDRESS() };
-
-const hih6130 = new HIH6130(options);
+// HIH6130 constructor options object is optional, i2cBusNo defaults to 1
+//
+const hih6130 = new HIH6130({ i2cBusNo : 1 });
 
 const readSensorData = () => {
   hih6130.readSensorData()
