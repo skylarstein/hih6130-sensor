@@ -25,7 +25,7 @@ const readSensorData = () => {
       console.log(`HIH6130 read error: ${err}`);
       setTimeout(readSensorData, 2000);
     });
-}
+};
 
 readSensorData();
 ```
