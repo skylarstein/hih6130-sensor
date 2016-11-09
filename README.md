@@ -1,6 +1,10 @@
-# hih6130-sensor [![Node.js versions](https://img.shields.io/badge/Node.js-4.x%20through%207.x-brightgreen.svg)](https://nodejs.org) [![NPM version](https://img.shields.io/npm/v/hih6130-sensor.svg)](https://www.npmjs.com/package/hih6130-sensor)
+# hih6130-sensor
+[![Node.js versions](https://img.shields.io/badge/Node.js-4.x%20through%207.x-brightgreen.svg)](https://nodejs.org) [![NPM version](https://img.shields.io/npm/v/hih6130-sensor.svg)](https://www.npmjs.com/package/hih6130-sensor)
 
-Welcome to hih6130-sensor, a Node.js I2C module for the the Honeywell HumidIcon HIH6130 Humidity and Temperature Sensor. Sparkfun has a [HIH6130 breakout board](https://www.sparkfun.com/products/11295), and [here is the datasheet](http://cdn.sparkfun.com/datasheets/Prototyping/1443945.pdf).
+[<img src="https://cdn.sparkfun.com//assets/parts/6/9/6/9/11295-02.jpg" width="150" align="right">](https://www.sparkfun.com/products/11295)
+
+
+Welcome to hih6130-sensor, a Node.js I2C module for the the Honeywell HumidIcon HIH6130 Humidity and Temperature Sensor. Sparkfun sells a [HIH6130 breakout board](https://www.sparkfun.com/products/11295), and [here is the datasheet](http://cdn.sparkfun.com/datasheets/Prototyping/1443945.pdf).
 
 This module uses [i2c-bus](https://github.com/fivdi/i2c-bus) which should provide access with Node.js on Linux boards like the Raspberry Pi Zero, 1, 2, or 3, BeagleBone, BeagleBone Black, or Intel Edison.
 
