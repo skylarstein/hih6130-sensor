@@ -1,6 +1,6 @@
 {
   "name": "hih6130-sensor",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A Node.js I2C module for the Honeywell HumidIcon HIH6130 Humidity and Temperature Sensor",
   "main": "HIH6130.js",
   "scripts": {
