@@ -1,5 +1,3 @@
-'use strict';
-
 const HIH6130 = require('hih6130-sensor');
 
 // HIH6130 constructor options object is optional, i2cBusNo defaults to 1

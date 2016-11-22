@@ -3,7 +3,6 @@
 
 [<img src="https://cdn.sparkfun.com//assets/parts/6/9/6/9/11295-02.jpg" width="150" align="right">](https://www.sparkfun.com/products/11295)
 
-
 Welcome to hih6130-sensor, a Node.js I2C module for the the Honeywell HumidIcon HIH6130 Humidity and Temperature Sensor. Sparkfun sells a [HIH6130 breakout board](https://www.sparkfun.com/products/11295), and [here is the datasheet](http://cdn.sparkfun.com/datasheets/Prototyping/1443945.pdf).
 
 This module uses [i2c-bus](https://github.com/fivdi/i2c-bus) which should provide access with Node.js on Linux boards like the Raspberry Pi Zero, 1, 2, or 3, BeagleBone, BeagleBone Black, or Intel Edison.
@@ -46,4 +45,4 @@ data = {
 ```
 ##Example Wiring
 
-For an example of I2C setup on a Raspberry Pi, take a look at my [pi-weather-station project](https://github.com/skylarstein/pi-weather-station).
+For I2C setup on a Raspberry Pi, take a look at my [pi-weather-station](https://github.com/skylarstein/pi-weather-station) project.
